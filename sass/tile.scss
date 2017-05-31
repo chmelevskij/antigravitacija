@@ -1,0 +1,33 @@
+.tile {
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+
+  &__left,
+  &__right {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__left {
+    background-image: url(../fire.jpg);
+  }
+
+  &__right {
+    background-image: url(../show.jpg);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+
+    &--open {
+      clip-path: polygon(100% 0, 10% 10%, 0 100%, 100% 100%);
+    }
+    &--open-l {
+      clip-path: polygon(100% 0, 90% 90%, 0 100%, 100% 100%);
+    }
+  }
+}
+
