@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body {
+@import url('https://fonts.googleapis.com/css?family=Roboto'); body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background: #333;
   color: white;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 .video-background {
   position: relative;
@@ -38,9 +39,44 @@ body {
   margin: 0;
 }
 
-.title__accent { font-style : italic; }
+.shows {
+  display: flex;
+  flex-flow: wrap;
+}
 
-.about {
+.tile {
+  background: darkcyan;
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+}
+
+.tile__left,
+.tile__right {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile__left {
+  background-image: url(fire.jpg);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.tile__right {
+  background-image: url(show.jpg);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.title__accent {
+  font-style : italic;
+}
+
+.section {
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -51,7 +87,20 @@ body {
   padding: 15px;
 }
 
-@media screen and (max-width: 425px){
+.contacts {
+  /* min-height: 150px; */
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  justify-content: space-between;
+}
+
+@media screen and (
+  max-width: 425px) {
   .title {
     font-size: 2rem;
   }
