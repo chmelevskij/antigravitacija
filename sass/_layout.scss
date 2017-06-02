@@ -1,0 +1,28 @@
+%pad {
+  padding: 15px;
+}
+
+$color-brd: white;
+
+.brd {
+  &-top {
+    border-top: 1px solid $color-brd;
+  }
+
+  &-right {
+    border-right: 1px solid $color-brd;
+  }
+
+  &-bottom {
+    border-bottom: 1px solid $color-brd;
+  }
+
+  &-left {
+    border-left: 1px solid $color-brd;
+  }
+
+  &-full {
+    border: 1px solid $color-brd;
+  }
+}
+

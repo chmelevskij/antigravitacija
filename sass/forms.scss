@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  justify-content: space-between;
+}
+
+input:not([type="submit"]) {
+  border-bottom: white solid 1px;
+  padding: 10px 0;
+  margin: 5px 0 0;
+}
+
+
