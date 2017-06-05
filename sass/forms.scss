@@ -1,3 +1,5 @@
+@import 'layout';
+
 form {
   display: flex;
   flex-direction: column;
@@ -5,10 +7,14 @@ form {
   justify-content: space-between;
 }
 
+input {
+  color: white;
+
+  @extend %pad;
+}
+
 input:not([type="submit"]) {
   border-bottom: white solid 1px;
   padding: 10px 0;
   margin: 5px 0 0;
 }
-
-

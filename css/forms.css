@@ -1,8 +1,29 @@
+input {
+  padding: 15px; }
+
+.brd-top {
+  border-top: 1px solid white; }
+
+.brd-right {
+  border-right: 1px solid white; }
+
+.brd-bottom {
+  border-bottom: 1px solid white; }
+
+.brd-left {
+  border-left: 1px solid white; }
+
+.brd-full {
+  border: 1px solid white; }
+
 form {
   display: flex;
   flex-direction: column;
   min-height: 250px;
   justify-content: space-between; }
+
+input {
+  color: white; }
 
 input:not([type="submit"]) {
   border-bottom: white solid 1px;

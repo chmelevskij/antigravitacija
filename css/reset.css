@@ -8,3 +8,7 @@ input,
 textarea {
   background: none;
   border: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }

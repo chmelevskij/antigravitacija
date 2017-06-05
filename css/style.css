@@ -10,7 +10,11 @@ textarea {
   background: none;
   border: none; }
 
-.about, .contacts {
+ul {
+  padding: 0;
+  margin: 0; }
+
+input, .nav__item, .about, .contacts {
   padding: 15px; }
 
 .brd-top {
@@ -46,16 +50,65 @@ p {
 .title__accent {
   font-style: italic; }
 
+input, .nav__item, .about, .contacts {
+  padding: 15px; }
+
+.brd-top {
+  border-top: 1px solid white; }
+
+.brd-right {
+  border-right: 1px solid white; }
+
+.brd-bottom {
+  border-bottom: 1px solid white; }
+
+.brd-left {
+  border-left: 1px solid white; }
+
+.brd-full {
+  border: 1px solid white; }
+
 form {
   display: flex;
   flex-direction: column;
   min-height: 250px;
   justify-content: space-between; }
 
+input {
+  color: white; }
+
 input:not([type="submit"]) {
   border-bottom: white solid 1px;
   padding: 10px 0;
   margin: 5px 0 0; }
+
+input, .nav__item, .about, .contacts {
+  padding: 15px; }
+
+.brd-top {
+  border-top: 1px solid white; }
+
+.brd-right {
+  border-right: 1px solid white; }
+
+.brd-bottom {
+  border-bottom: 1px solid white; }
+
+.brd-left {
+  border-left: 1px solid white; }
+
+.brd-full {
+  border: 1px solid white; }
+
+.nav {
+  list-style: none;
+  display: flex;
+  width: 50vw;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1; }
 
 body {
   background: #333;
@@ -73,15 +126,28 @@ body {
     bottom: 0;
     background-size: cover;
     background-position: center; }
-  .tile__left {
+  .tile--show {
+    background-image: url(../show.jpg); }
+  .tile--uv {
+    background-image: url(../uv.jpg); }
+  .tile--fire {
     background-image: url(../fire.jpg); }
+  .tile--pipes {
+    background-image: url(../pipes.jpg); }
+  .tile--kojukai {
+    background-image: url(../kojukai.jpg); }
+  .tile--lesson {
+    background-image: url(../lesson.jpg); }
   .tile__right {
-    background-image: url(../show.jpg);
     clip-path: polygon(100% 0, 0 100%, 100% 100%); }
     .tile__right--open {
       clip-path: polygon(100% 0, 10% 10%, 0 100%, 100% 100%); }
     .tile__right--open-l {
       clip-path: polygon(100% 0, 90% 90%, 0 100%, 100% 100%); }
+  @media screen and (min-width: 426px) {
+    .tile {
+      width: 30vw;
+      height: 30vw; } }
 
 .video-background {
   position: relative;
@@ -111,6 +177,10 @@ body {
 .shows {
   display: flex;
   flex-flow: wrap; }
+  @media screen and (min-width: 426px) {
+    .shows {
+      flex-flow: nowrap;
+      justify-content: space-evenly; } }
 
 .about {
   max-width: 650px; }

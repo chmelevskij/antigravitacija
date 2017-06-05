@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <div class="video-background">
+    <nav>
+      <ul class="nav">
+        <a class="nav__item" href="#top"><li>Pagrindinys</li></a>
+        <a class="nav__item" href="#about"><li>Apie</li></a>
+        <a class="nav__item" href="#shows"><li>Pasirodymai</li></a>
+        <a class="nav__item" href="#contacts"><li>Kontaktai</li></a>
+      </ul>
+    </nav>
+    <section id="top" class="video-background">
       <iframe id="video-bg" src="https://www.youtube.com/embed/7O59PzbVjqM?enablejsapi=1&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=7O59PzbVjqM" frameborder="0" allowfullscreen></iframe>
       <h1 class="title">Ant<span class="title__accent">i</span>gravitacija</h1>
-    </div>
+    </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <h2>Apie</h2>
       <h3>Mūsų tikslas – kūryba, ne kartojimas!</h3>
       <p>
@@ -25,28 +32,28 @@
       </p>
     </section>
 
-    <section class="shows">
+    <section id="shows" class="shows">
       <div class="tile">
-        <div class="tile__left"></div>
-        <div class="tile__right"></div>
+        <div class="tile__left tile--show"></div>
+        <div class="tile__right tile--uv"></div>
       </div>
       <div class="tile">
-        <div class="tile__left"></div>
-        <div class="tile__right"></div>
+        <div class="tile__left tile--fire"></div>
+        <div class="tile__right tile--pipes"></div>
       </div>
       <div class="tile">
-        <div class="tile__left"></div>
-        <div class="tile__right"></div>
+        <div class="tile__left tile--kojukai"></div>
+        <div class="tile__right tile--lesson"></div>
       </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <h2>Susisiekite</h2>
       <form action="https://formspree.io/t.chmelevskij@gmail.com" method="POST">
         <input required type="text" name="name" placeholder="Vardas">
         <input required type="email" name="_replyto" placeholder="El. Pastas">
-        <textarea required type="textarea" name="message" placeholder="Zinute" rows="5"></textarea>
-        <input type="submit" value="Send">
+        <textarea class="brd-right brd-bottom" required type="textarea" name="message" placeholder="Zinute" rows="5"></textarea>
+        <input type="submit" class="brd-full" value="Send">
       </form>
     </section>
 

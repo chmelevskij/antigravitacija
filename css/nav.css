@@ -1,0 +1,27 @@
+.nav__item {
+  padding: 15px; }
+
+.brd-top {
+  border-top: 1px solid white; }
+
+.brd-right {
+  border-right: 1px solid white; }
+
+.brd-bottom {
+  border-bottom: 1px solid white; }
+
+.brd-left {
+  border-left: 1px solid white; }
+
+.brd-full {
+  border: 1px solid white; }
+
+.nav {
+  list-style: none;
+  display: flex;
+  width: 50vw;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1; }
